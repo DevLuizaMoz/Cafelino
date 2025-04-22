@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #D9C8BF;
+}
+a{
+    font-family: inherit;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%; 
+    background-color: #0D0D0D;
+    box-shadow: 0px 0px 5px black; 
+    position: fixed; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    top: 0; 
+    z-index: 1000; 
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 1rem;
+}
+.logo-main{
+    background-image: url(geral/logo/logoBranca-cafelino.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+    width: 110px;
+    height: 70px;
+    position: relative;
+    top: -10px;
+}
+nav li { 
+    height: 50px;
+} 
+nav a { 
+    height: 100%; 
+    padding: 0 30px; 
+    text-decoration: none;
+    display: flex; 
+    align-items: center; 
+    color: black;
+} 
+nav li:first-child { 
+    margin-right: auto; 
+} 
+.nav_menu-button-icon { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+.nav_menu-button-icon svg {
+    fill: white;
+}
+
+.sidebar { 
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    height: 100vh; 
+    width: 250px; 
+    z-index: 999; 
+    background-color: #26262659; 
+    backdrop-filter: blur(15px); 
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1); 
+    display: none; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    list-style: none;
+} 
+.sidebar li { 
+    width: 100%;
+} 
+.sidebar a { 
+    width: 100%;
+    color: #D9C8BF;
+    font-size: 18px;
+    padding: 40px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.sidebar a:not(.nav_closed-button-icon a)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+}
+.sidebar a:hover {
+    transform: scale(0.9);
+    font-size: 19.5px;
+}
+.sidebar a:not(.nav_closed-button-icon a):hover::before{
+    left: 0;
+}
+.nav_closed-button-icon { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+} 
+.nav_closed-button-icon svg{
+    fill: white;
+}
+.img-nav{
+    background-image: url(geral/gatinho-nav.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: -150px;
+    left: 20px;
+    width: 184px;
+    height: 170px;
+}
+.banner{
+    background-image: url(geral/banner/banner2.jpeg);
+    width: 100vw;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+    max-width: 900px;
+}
+.elements{
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.elements p{
+    text-align: center;
+    color: #8C695D;
+    font-size: 14px;
+    padding: 30px;
+    font-weight: bold;
+}
+.line-elements{
+    background-color: #8C695D;
+    width: 5px;
+    height: 155px;
+}
+.icon-coffee-bean{
+    background-image: url(elementos/cappuccino.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+}
+.icon-menu{
+    background-image: url(elementos/croissant.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+}
+.icon-delivery{
+    background-image: url(elementos/fast-delivery.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+}
+.icon-wifi{
+    background-image: url(elementos/wi-fi.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+}
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 55px auto;
+    flex-direction: column;
+    max-width: 800px;
+}
+.about{
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 20px;
+}
+.content-text-about h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0D0D0D;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: #8C695D;
+}
+.content-text-about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.content-imgs-about-cats {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px;
+}
+.img-about-cat1{
+    background-image: url(gatos/gatos_abraçados.jpg);
+    width: 200px;
+    height: 180px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-about-cat2{
+    background-image: url(gatos/gato_sorrindo.jpg);
+    width: 200px;
+    height: 180px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-about-cat3{
+    background-image: url(gatos/gato_olhando.jpg);
+    width: 200px;
+    height: 180px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.environment{
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 20px;
+}
+.content-text-environment h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0D0D0D;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    color: #8C695D;
+}
+.content-text-environment p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.additional-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    margin: auto;
+}
+.img-additional-page{
+    background-image: url(geral/pata-removebg-preview.png);
+    width: 165px;
+    height: 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content-text-additional-page{
+    text-align: center;
+    font-size: 15.5px;
+}
+.content-text-additional-page a{
+    text-decoration: none;
+    color: #8C695D;
+    font-size: 16px;
+    cursor: pointer;
+}
+.container-menu {
+    margin: 55px auto;
+    max-width: 900px;
+}
+
+.container-text-menu {
+    text-align: center;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 20px;
+}
+.container-text-menu h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8C695D;
+    margin: 1.2rem 0 1rem;
+}
+.container-text-menu p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 25px;
+}
+.list-items h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 20px;
+}
+.list-items {
+    margin-top: 50px;
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 20px;
+}
+.card-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    gap: 20px;
+}
+.card {
+    width: 350px;
+    height: 300px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    margin-top: 85px;
+    outline: 2px solid #8C695D;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover; 
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -90px;
+    left: 100px;
+    border-radius: 50%;
+    outline: 2px solid #8C695D;
+}
+.food-title{
+    padding: 70px 0 10px;
+}
+.food-title h1{
+    font-size: 22px;
+    color: #8C695D;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: inherit;
+}
+.desc-food p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.price span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0D0D0D;
+}
+
+
+
+@media (max-width:780px) {
+    .card{
+        margin-bottom: 55px;
+    }
+    .card-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .list-items h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .sidebar { 
+        width: 100%; 
+    }
+    .container-elements{
+        width: 400px;
+        flex-direction: column;
+    }
+    .elements{
+        width: 100%;
+        margin-top: 35px;
+    }
+    .elements p{
+        text-align: center;
+        color: #8C695D;
+        font-size: 14px;
+        padding: 30px;
+        font-weight: bold;
+    }
+    .line-elements{
+        background-color: #8C695D;
+        width: 155px;
+        height: 3px;
+    }
+    .icon-coffee-bean{
+        width: 90px;
+        height: 90px;
+    }
+    .icon-menu{
+        width: 90px;
+        height: 90px;
+    }
+    .icon-delivery{
+        width: 90px;
+        height: 90px;
+    }
+    .icon-wifi{
+        width: 90px;
+        height: 90px;
+    }
+}
