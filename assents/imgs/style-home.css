@@ -473,7 +473,146 @@ nav li:first-child {
     width: 12px;
     background-color: #8C695D;
 }
-
+.container-location{
+    max-width: 800px;
+    margin: 55px auto;
+}
+.container-location h1{
+    font-size: 2.5rem;
+    color: #8C695D;
+    text-align: center;
+    font-weight: bold;
+    font-family: inherit;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+.content-location{
+    display: flex; 
+    gap: 10px;
+}
+.information-location{
+    margin-right: 50px;
+}
+.container-text-location{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 14.5px;
+    color: #0D0D0D;
+}
+.content-location h3{
+    font-size: 15.5px;
+    margin-top: 3px;
+}
+.icon-location{
+    background-image: url(geral/icons8-marcador-50.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.icon-phone{
+    background-image: url(geral/icons8-phone-call-64.png);
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.icon-email{
+    background-image: url(geral/icons8-email-48.png);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.border-location{
+    border: 2px solid #8C695D;
+    padding: 20px;
+    border-radius: 25px;
+    display: flex;
+    margin-bottom: 15px;
+}
+.iframe-location iframe{
+    border-radius: 20px;
+    border: 2px solid #8C695D;
+}
+.content-footer{
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0D0D0D;
+    border-radius: 30px 30px 0px 0px;
+}
+.content-information_footer{
+    text-align: center;
+    padding: 25px;
+    width: 550px;
+}
+.content-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-footer{
+    background-image: url(geral/logo/logoBranca-cafelino.png);
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -55px;
+}
+.img-cat{
+    background-image: url(geral/gatinho_xicara-removebg-preview.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -75px;
+}
+.information-schedules-location_footer{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: -65px;
+}
+.text-social-media_footer{
+    text-align: center;
+    color: white;
+    font-size: 15.5px;
+    line-height: 1.5px;
+    margin-bottom: 15px;
+}
+.content-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.content-social-media{
+    fill: white;
+}
+.programmer{
+    width: 100%;
+}
+.programmer h2{
+    font-size: 13px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    color: white;
+    line-height: 1.5px;
+    
+}
 
 @media (max-width:780px) {
     .card{
@@ -499,6 +638,20 @@ nav li:first-child {
     }
     .testimonials-item .rating{
         font-size: 14px
+    }
+    .content-location{
+        flex-direction: column;
+    }
+    .container-text-location{
+        text-align: center;
+    }
+    .border-location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .information-location{
+        margin-right: 0px;
     }
 }
 
