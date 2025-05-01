@@ -110,8 +110,9 @@ nav li:first-child {
     transition: transform 0.3s ease-in-out;
 }
 .sidebar a:hover {
-    transform: scale(0.9);
+    transform: left(0.9);
     font-size: 19.5px;
+    color: white;
 }
 .sidebar a:not(.nav_closed-button-icon a):hover::before{
     left: 0;
@@ -235,6 +236,7 @@ nav li:first-child {
     justify-content: space-between; 
     align-items: center; 
     gap: 10px;
+    margin-bottom: 55px;
 }
 .img-about-cat1{
     background-image: url(gatos/gatos_abraçados.jpg);
@@ -435,6 +437,13 @@ nav li:first-child {
     background-color: aliceblue;
     padding: 30px;
     border-radius: 30px;
+}
+.mais{
+    display: none;
+}
+.btnVerMais{
+    font-weight: 500;
+    cursor: pointer;
 }
 .testimonials-item img{
     width: 80px;
@@ -653,6 +662,18 @@ nav li:first-child {
     .information-location{
         margin-right: 0px;
     }
+    .img-about-cat1{
+        width: 160px;
+        height: 150px;
+    }
+    .img-about-cat2{
+        width: 160px;
+        height: 150px;
+    }
+    .img-about-cat3{
+        width: 160px;
+        height: 150px;
+    }
 }
 
 @media (max-width: 610px) {
@@ -700,5 +721,17 @@ nav li:first-child {
     }
     .testimonials .swiper-pagination{
         margin-top: 20px;
+    }
+    .img-about-cat1{
+        width: 120px;
+        height: 110px;
+    }
+    .img-about-cat2{
+        width: 120px;
+        height: 110px;
+    }
+    .img-about-cat3{
+        width: 120px;
+        height: 110px;
     }
 }

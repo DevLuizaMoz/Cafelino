@@ -18,11 +18,11 @@
                     <div class="logo-main"></div>
                     <ul class="sidebar">
                         <li class="nav_closed-button-icon" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                        <li><a href="#history">História</a></li>
-                        <li><a href="#ideario">Ideal</a></li>
-                        <li><a href="#pegagogic">Equipe</a></li>
-                        <li><a href="#infrastructure">Instalações</a></li>
-                        <li><a href="#FAQ-box">Dúvidas</a></li>
+                        <li><a href="#about">O que é um gato café?</a></li>
+                        <li><a href="#environment">Nosso ambiente</a></li>
+                        <li><a href="#cards-menu">Nosso cardápio</a></li>
+                        <li><a href="#testimonials">O que nossos clientes acham?</a></li>
+                        <li><a href="#location">Localização</a></li>
                         <div class="img-nav"></div>
                     </ul>
                     <li class="nav_menu-button-icon"><a href="#" onclick="showSidebar(event)"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>  
@@ -60,7 +60,7 @@
     </section>
 
     <section class="content-container">
-        <div class="about">
+        <div class="about" id="about">
             <div class="content-text-about">
                 <h1>O que é um GATO CAFÉ?</h1>
                 <p>Um gato café é muito mais do que uma simples cafeteria — é um lugar onde o amor pelos gatos e pela cultura do café se encontram em perfeita harmonia! Esses espaços únicos combinam bebidas deliciosas, comidas artesanais e a presença encantadora de gatos, proporcionando aos visitantes uma experiência acolhedora e relaxante.</p>
@@ -74,7 +74,7 @@
             </div>
             
         </div>
-        <div class="environment">
+        <div class="environment" id="environment">
             <div class="content-text-environment">
                 <h1>Nosso ambiente</h1>
                 <p>Nossa cafeteria foi cuidadosamente projetada para oferecer aos nossos clientes uma experiência acolhedora e memorável. Cada detalhe do espaço reflete o equilíbrio perfeito entre elegância e conforto, criando um ambiente aconchegante, onde o aroma do café recém-preparado e o som suave de conversas se misturam harmoniosamente.</p>
@@ -92,7 +92,7 @@
             </div>
         </div>
         
-        <div class="container-menu">
+        <div class="container-menu" id="cards-menu">
             <div class="container-text-menu">
                 <h1>Pedidos mais populares</h1>
                 <p>Essas são nossas opções mais pedidas, mas não se preocupe há muito mais para você provar!</p>
@@ -218,7 +218,7 @@
             </div>
         </div>
         
-        <div class="container-testimonials">
+        <div class="container-testimonials" id="testimonials">
             <div class="testimonials">
                 <div class="content-text-testimonials">
                     <h1>O que nossos clientes dizem</h1>
@@ -241,7 +241,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>Gostei muito do lugar, super confortavel e aconchegante. Saí de lá com um novo amigo!</p>
+                                <p>Gostei muito do lugar, super confortavel e aconchegante. Saí de lá com um novo amigo que ama muito carinho!</p>
                             </div>
                             <!--2-->
                             <div class="swiper-slide testimonials-item">
@@ -258,7 +258,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>Ameeeei o lugar!!!🥰 Primeira vez que fui em uma cafeteria com essa temática. Achei a taxa para entrar no gatil super justa, já que dá para se perceber que os gatinhos são super bem cuidados! </p>
+                                <p>Ameeeei o lugar!!!🥰 Primeira vez que fui em uma cafeteria com essa temática<span class="pontos">...</span><span class="mais">. Achei a taxa para entrar no gatil super justa, já que dá para se perceber que os gatinhos são super bem cuidados! </p>
+                                
+                                <a onclick="vermais(this)" class="btnVerMais">Ver mais</a>
                             </div>
                             <!--3-->
                             <div class="swiper-slide testimonials-item">
@@ -275,7 +277,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>Trabalho ao lado e me sinto obrigada a passar na hora de almoço para tomar um café e fazer carinho nos gatinhos❤️❤️❤️</p>
+                                <p>Trabalho ao lado e me sinto obrigada a passar na hora de almoço<span class="pontos">...</span><span class="mais"> para tomar um café e fazer carinho nos gatinhos❤️❤️❤️</p>
+
+                                    <a onclick="vermais(this)" class="btnVerMais">Ver mais</a>
                             </div>
                             <!--4-->
                             <div class="swiper-slide testimonials-item">
@@ -292,7 +296,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>Minha filha viu no TikTok e ficou doida para ir. Passou o caminho tentando me convencer a adotar um dos gatinhos... e deu certo. Adotei a Jujuba, uma gatinha tricolor toda meiga. Me conquistou também.</p>
+                                <p>Minha filha viu no TikTok e ficou doida para ir. Passou o caminho tentando me convencer<span class="pontos">...</span><span class="mais"> a adotar um dos gatinhos... e deu certo. Adotei a Jujuba, uma gatinha tricolor toda meiga. Me conquistou também.</p>
+                                <a onclick="vermais(this)" class="btnVerMais">Ver mais</a>
                             </div>
                             <!--5-->
                             <div class="swiper-slide testimonials-item">
@@ -309,7 +314,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p>O machiatto deles é surreal de bom, ainda mais se estiver junto com aquele sanduíche de croissant. MUITO BOM. Deixo essa dica!</p>
+                                <p>O machiatto deles é surreal de bom, ainda mais se estiver junto com aquele<span class="pontos">...</span><span class="mais"> sanduíche de croissant. MUITO BOM. Deixo essa dica!</p>
+                                <a onclick="vermais(this)" class="btnVerMais">Ver mais</a>
                             </div>
                         </div>
                     </div>
@@ -318,7 +324,7 @@
             </div>
         </div>
         
-        <div class="container-location">
+        <div class="container-location" id="location">
             <h1>Nos encontre em</h1>
             <div class="content-location">
                 <div class="information-location">
@@ -384,33 +390,17 @@
         </footer> 
 
         <!--fazer depois
+            pagina falando dos gatos especificamente
+                ambiente
+                    regras de convivencia
+                    taxa de entrada
+                
+                adoção
 
-        adicionar ver mais e ver menos nos comentarios
+                seção de duvidas frequentes
 
-
-        responsividade
-            textos
-            imagens dos gatos para celular
-
-        mexes no nav
-            alterar ids
-            nomes
-            TALVEZ tirar o gatinho
-
-
-
-            
-                pagina falando dos gatos especificamente
-                    ambiente
-                        regras de convivencia
-                        taxa de entrada
-                    
-                    adoção
-
-                    seção de duvidas frequentes
-
-                    footer
-                        redes sociais
+                footer
+                    redes sociais
         -->
 
     </section>
