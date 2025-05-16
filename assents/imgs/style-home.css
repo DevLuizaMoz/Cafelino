@@ -549,7 +549,9 @@ nav li:first-child {
 }
 .content-footer{
     max-width: 700px;
+    width: 100%;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;

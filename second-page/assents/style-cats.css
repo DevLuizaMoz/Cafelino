@@ -137,16 +137,270 @@ nav li:first-child {
     height: 170px;
 }
 .banner{
-    background-image: url(geral/banner/banner2.jpeg);
+    background-image: url(img/geral/banner/Todo\ animal\ merece\ amor\ e\ um\ lar.\ Adote\ e\ ganhe\ um\ amigo\ para\ sempre!.png);
     width: 100vw;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    top: 50px;
+}
+.information{
+    max-width: 800px;
+    margin: 75px auto;
+}
+.content-information-adctional{
+    flex-direction: column;
+    background-color: #8C695D;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+.box-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons-information {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.icon-adoption-information {
+    background-image: url(img/geral/caixa-de-gato.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 10px;
+}
+.icon-foof-information{
+    background-image: url(img/geral/racao-para-animais-de-estimacao\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 10px;
+}
+.icon-veterinarian-information{
+    background-image: url(img/geral/veterinario.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 10px;
+}
+.text-information {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #8C695D;
+    user-select: none;
+    text-align: center;
+    background-color: white;
+    height: 200px;
+    border-radius: 0px 0px 20px 20px;
+}
+#contador {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #8C695D;
+    user-select: none;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.text-box-information{
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: 400;
+    color: #8C695D;
+    user-select: none;
+    text-align: center;
+}
+.text-decoy-information{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 30px;
+    color: #8C695D;
+}
+.text-about{
+    max-width: 850px;
+    margin: 55px auto;
+    padding: 30px;
+}
+.title-text-adoption{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    color: #8C695D;
+}
+.content-adoption{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+.title-text-works{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    color: #8C695D;
+}
+.content-works{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+.list-works{
+    list-style-type: circle;
+}
+.content-list-works{
+    padding: 10px;
 }
 
+
+
+
+
+
+
+.text-chance{
+    max-width: 850px;
+    margin: 55px auto;
+    padding: 30px;
+}
+.title-text-chance{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    color: #8C695D;
+}
+.content-chance{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 35px;
+}
+
+.content-footer{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0D0D0D;
+    border-radius: 30px 30px 0px 0px;
+}
+.content-information_footer{
+    text-align: center;
+    padding: 25px;
+    width: 550px;
+}
+.content-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-footer{
+    background-image: url(img/geral/logo/logoBranca-cafelino.png);
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -55px;
+}
+.img-cat{
+    background-image: url(img/geral/gatinho_xicara-removebg-preview.png);
+    width: 130px;
+    height: 130px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -75px;
+}
+.information-schedules-location_footer{
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: -65px;
+}
+.text-social-media_footer{
+    text-align: center;
+    color: white;
+    font-size: 15.5px;
+    line-height: 1.5px;
+    margin-bottom: 15px;
+}
+.content-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.content-social-media{
+    fill: white;
+}
+.programmer{
+    width: 100%;
+}
+.programmer h2{
+    font-size: 13px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    color: white;
+    line-height: 1.5px;
+    
+}
 @media (max-width: 610px) {
     .sidebar { 
         width: 100%; 
+    }
+    .banner{
+        background-image: url(img/geral/banner/banner600px.png);
+        width: 100vw;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 60px;
+    }
+    .box-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /* Espaçamento entre os itens */
     }
 }

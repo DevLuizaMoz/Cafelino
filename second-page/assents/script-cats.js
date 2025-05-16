@@ -37,3 +37,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+
+// Função para animar a contagem de 0 até 123
+  const contadorEl = document.getElementById('contador');
+  let count = 0;
+  const maxCount = 123;
+  const durationMs = 3000; // duração total da animação em ms
+  const incrementTime = durationMs / maxCount;
+  function updateCounter() {
+    count++;
+    if(count <= maxCount){
+      contadorEl.textContent = count;
+      setTimeout(updateCounter, incrementTime);
+    }
+  }
+  // Inicia a contagem automaticamente ao carregar a página
+  window.onload = () => {
+    contadorEl.textContent = '0';
+    updateCounter();
+  };
