@@ -13,6 +13,9 @@ body{
     overflow-x: hidden;
     background-color: #D9C8BF;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 a{
     font-family: inherit;
     text-decoration: none;
@@ -236,8 +239,31 @@ nav li:first-child {
 }
 .text-about{
     max-width: 850px;
-    margin: 55px auto;
+    margin: auto;
     padding: 30px;
+}
+.title-text-cattery{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    color: #8C695D;
+}
+.content-cattery{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
+    padding-bottom: 55px;
+}
+.list-cattery{
+    list-style-type: circle;
+    padding: 5px 45px;
+}
+.content-list-cattery{
+     padding: 10px;
 }
 .title-text-adoption{
     font-family: 'Poppins', sans-serif;
@@ -253,14 +279,14 @@ nav li:first-child {
     line-height: 1.6;
     color: #333;
     text-align: justify;
-    margin-bottom: 35px;
+    padding-bottom: 55px;
 }
 .title-text-works{
     font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: 2rem;
     margin-bottom: 1rem;
-    margin-top: 1.2rem;
+    margin-top: 55px;
     color: #8C695D;
 }
 .content-works{
@@ -273,28 +299,22 @@ nav li:first-child {
 }
 .list-works{
     list-style-type: circle;
+    padding: 5px 45px;
 }
 .content-list-works{
     padding: 10px;
 }
-
-
-
-
-
-
-
 .text-chance{
     max-width: 850px;
-    margin: 55px auto;
+    margin: auto;
     padding: 30px;
 }
 .title-text-chance{
     font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: 2rem;
-    margin-bottom: 1rem;
-    margin-top: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 35px;
     color: #8C695D;
 }
 .content-chance{
@@ -303,9 +323,196 @@ nav li:first-child {
     line-height: 1.6;
     color: #333;
     text-align: justify;
-    margin-bottom: 35px;
 }
 
+.content-galery{
+    max-width: 800px;
+    margin: 55px auto;
+}
+.title-galery-cats{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    color: #8C695D;
+}
+.galery-picture1 { background-image: url('img/gatos/gato_brincando.jpg'); }
+.galery-picture2 { background-image: url('img/gatos/gato_deitado.jpg'); }
+.galery-picture3 { background-image: url('img/gatos/Emma-Stone.jpg'); }
+.galery-picture4 { background-image: url('img/gatos/tutu.jpg'); }
+.galery-picture5 { background-image: url('img/gatos/Sr.Aroldo.jpg'); }
+.galery-picture6 { background-image: url('img/gatos/tofu.jpg'); }
+.galery-picture7 { background-image: url('img/gatos/gatos_abraçados.jpg'); }
+.galery-picture8 { background-image: url('img/gatos/gatos_brincando\ \(2\).jpg'); }
+
+.galery-photos {
+    width: 150px; /* Define um tamanho fixo */
+    height: 150px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.galery-photos:hover {
+    transform: scale(1.1);
+}
+.content-photos-cats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; 
+    padding: 30px;
+}
+
+.container-testimonials{
+    margin-top: 55px;
+}
+.testimonials{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 25px;
+}
+.testimonials-content{
+    width: 100%;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-top: 45px;
+}
+.content-text-testimonials{
+    font-size: 22px;
+    color: #8C695D;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: inherit;
+}
+.testimonials-item{
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 30px;
+}
+.mais{
+    display: none;
+}
+.btnVerMais{
+    font-weight: 500;
+    cursor: pointer;
+}
+.testimonials-item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+    object-fit: cover;
+}
+.info-testimonials{
+    display: flex;
+    align-items: center;
+}
+.name-testimonials{
+    font-size: 24px;
+    font-weight: 500;
+    color: #0D0D0D;
+    line-height: 1.2;
+}
+.testimonials-item p{
+    margin-top: 20px;
+    color: #333;
+}
+.testimonials-item .rating{
+    margin-top: 5px;
+    color: gold; 
+    font-size: 15px
+}
+.testimonials .swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+.testimonials .swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+    background-color: #8C695D;
+}
+.photos-cat{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    margin: 15px auto;
+    border-radius: 20px;
+}
+.photo1cat{
+    background-image: url(img/pessoas/photo1cat.jpg);
+}
+.photo2cat{
+    background-image: url(img/pessoas/photo2cat.jpg);
+}
+.photo3cat{
+    background-image: url(img/pessoas/photo3cat.jpg);
+}
+.photo4cat{
+    background-image: url(img/pessoas/photo4cat.jpg);
+}
+.photo5cat{
+    background-image: url(img/pessoas/photo5cat.jpg);
+}
+.title-FAQ-box{
+    font-size: 2.5rem;
+    padding: 20px;
+    white-space: normal;
+    margin: auto;
+    text-align: center;
+    color: #8C695D;
+}
+.questions-container{
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 15px;
+}
+.question button{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    background-color: #8C695D;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.question button span{
+    font-weight: normal;
+}
+.question p{
+    font-size: 16px;
+    color: #333;
+    max-height: 0;
+    font-weight: normal;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    color: #fff;
+}
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
 .content-footer{
     max-width: 700px;
     margin: 0 auto;
@@ -401,6 +608,55 @@ nav li:first-child {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px; /* Espaçamento entre os itens */
+        gap: 20px;
     }
+    .photos-cat{
+        width: 230px;
+        height: 170px;
+    }
+    .testimonials-content{
+        width: 100%;
+        padding-right: 35px;
+        padding-left: 35px;
+        margin-top: 45px;
+    }
+    .content-text-testimonials{
+        font-size: 22px;
+    }
+    .testimonials-item img{
+        width: 60px;
+        height: 60px;
+    }
+    .testimonials-item p{
+        font-size: 15.5px;
+    }
+    .name-testimonials{
+        font-size: 20px;
+    }
+    .testimonials-item .rating{ 
+        font-size: 12px
+    }
+    .testimonials .swiper-pagination-bullet{
+        height: 12px;
+        width: 12px;
+        background-color: #8C695D;
+    }
+    
+    .galery-picture2 { 
+        display: none; 
+    }
+    .galery-picture3 { 
+        display: none; 
+    }
+    .galery-photos {
+        width: 120px; 
+        height: 120px;
+    }
+    .content-photos-cats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px; 
+        padding: 30px;
+    }
+
 }

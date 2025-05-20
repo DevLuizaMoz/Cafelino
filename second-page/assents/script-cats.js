@@ -58,3 +58,64 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     contadorEl.textContent = '0';
     updateCounter();
   };
+
+
+const carousel = document.querySelector(".content-IDcard-cats-identity");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+carousel.addEventListener("mousedown", (e) => {
+    isDown = true;
+    carousel.classList.add("active");
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+});
+
+carousel.addEventListener("mouseleave", () => {
+    isDown = false;
+    carousel.classList.remove("active");
+});
+
+carousel.addEventListener("mouseup", () => {
+    isDown = false;
+    carousel.classList.remove("active");
+});
+
+carousel.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 2; // Velocidade do movimento
+    carousel.scrollLeft = scrollLeft - walk;
+});
+
+//duvidas frequentes
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
+
+
+function vermais(botao) {
+    let comentario = botao.closest(".testimonials-item"); // Obtém o elemento pai correto
+    let pontos = comentario.querySelector(".pontos");
+    let maisTexto = comentario.querySelector(".mais");
+    
+    if (pontos.style.display === "none") {
+        pontos.style.display = "inline";
+        maisTexto.style.display = "none";
+        botao.innerHTML = "Ver mais";
+    } else {
+        pontos.style.display = "none";
+        maisTexto.style.display = "inline";
+        botao.innerHTML = "Ver menos";
+    }
+}
