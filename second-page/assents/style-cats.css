@@ -80,7 +80,7 @@ nav li:first-child {
     height: 100vh; 
     width: 250px; 
     z-index: 999; 
-    background-color: #26262659; 
+    background-color: #8c695d6c; 
     backdrop-filter: blur(15px); 
     box-shadow: -10px 0 10px rgba(0,0,0,0.1); 
     display: none; 
@@ -94,9 +94,8 @@ nav li:first-child {
 } 
 .sidebar a { 
     width: 100%;
-    color: #D9C8BF;
-    font-size: 18px;
-    padding: 40px;
+    color: #262626;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     overflow: hidden;
@@ -114,7 +113,7 @@ nav li:first-child {
 }
 .sidebar a:hover {
     transform: left(0.9);
-    font-size: 19.5px;
+    font-size: 16.5px;
     color: white;
 }
 .sidebar a:not(.nav_closed-button-icon a):hover::before{
@@ -127,17 +126,6 @@ nav li:first-child {
 } 
 .nav_closed-button-icon svg{
     fill: white;
-}
-.img-nav{
-    background-image: url(img/geral/gatinho-nav.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    bottom: -150px;
-    left: 20px;
-    width: 184px;
-    height: 170px;
 }
 .banner{
     background-image: url(img/geral/banner/Todo\ animal\ merece\ amor\ e\ um\ lar.\ Adote\ e\ ganhe\ um\ amigo\ para\ sempre!.png);
@@ -263,7 +251,7 @@ nav li:first-child {
     padding: 5px 45px;
 }
 .content-list-cattery{
-     padding: 10px;
+    padding: 10px;
 }
 .title-text-adoption{
     font-family: 'Poppins', sans-serif;
@@ -324,7 +312,6 @@ nav li:first-child {
     color: #333;
     text-align: justify;
 }
-
 .content-galery{
     max-width: 800px;
     margin: 55px auto;
@@ -333,6 +320,8 @@ nav li:first-child {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 2rem;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 15px;
     margin-top: 35px;
     color: #8C695D;
@@ -347,24 +336,20 @@ nav li:first-child {
 .galery-picture8 { background-image: url('img/gatos/gatos_brincando\ \(2\).jpg'); }
 
 .galery-photos {
-    width: 150px; /* Define um tamanho fixo */
+    width: 150px;
     height: 150px;
     margin: auto;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-.galery-photos:hover {
-    transform: scale(1.1);
 }
 .content-photos-cats {
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px; 
-    padding: 30px;
+    gap: 30px;
+    margin: auto;
 }
-
 .container-testimonials{
     margin-top: 55px;
 }
@@ -582,37 +567,85 @@ nav li:first-child {
 .programmer h2{
     font-size: 13px;
     text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 20px;
-    color: white;
-    line-height: 1.5px;
-    
+    padding-bottom: 10px;
+    color: #fff;
 }
-@media (max-width: 610px) {
-    .sidebar { 
-        width: 100%; 
-    }
+@media (max-width:1060px){
     .banner{
-        background-image: url(img/geral/banner/banner600px.png);
         width: 100vw;
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        top: 60px;
+        height: 300px;
     }
-    .box-information {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
+}
+@media (max-width:780px){
+    .banner{
+        width: 100vw;
+        height: 200px;
     }
-    .photos-cat{
-        width: 230px;
+    .information{
+        max-width: 800px;
+        margin: 75px auto;
+    }
+    .content-information-adctional{
+        width: 150px;
+        height: 250px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 55px;
+        margin-bottom: 55px;
+    }
+    .icon-adoption-information {
+        width: 70px;
+        height: 70px;
+    }
+    .icon-foof-information{
+        width: 70px;
+        height: 70px;
+    }
+    .icon-veterinarian-information{
+        width: 70px;
+        height: 70px;
+    }
+    .text-information {
+        font-size: 2rem;
         height: 170px;
+    }
+    #contador {
+        font-size: 2rem;
+    }
+    .text-box-information{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .title-text-cattery{
+        font-size: 1.5rem;
+    }
+    .content-cattery{
+        font-size: 1rem;
+    }
+    .title-text-adoption{
+        font-size: 1.5rem;
+    }
+    .content-adoption{
+        font-size: 1rem;
+    }
+    .title-text-works{
+        font-size: 1.5rem;
+    }
+    .content-works{
+        font-size: 1rem;
+    }
+    .title-galery-cats{
+        font-size: 1.5rem;
+    }
+    .galery-photos {
+        width: 130px;
+        height: 130px;
+    }
+    .title-text-chance{
+        font-size: 1.5rem;
+    }
+    .content-chance{
+        font-size: 1rem;
     }
     .testimonials-content{
         width: 100%;
@@ -641,7 +674,42 @@ nav li:first-child {
         width: 12px;
         background-color: #8C695D;
     }
+    .title-FAQ-box{
+        font-size: 2rem;
+        margin-top: 35px;
+    }
+    .question button{
+        font-size: 16px;
+    }
+    .question p{
+        font-size: 15.5px;
+    }
     
+}
+@media (max-width: 610px) {
+    .sidebar { 
+        width: 100%; 
+    }
+    .banner{
+        background-image: url(img/geral/banner/banner600px.png);
+        width: 100vw;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 60px;
+    }
+    .box-information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .photos-cat{
+        width: 230px;
+        height: 170px;
+    }
     .galery-picture2 { 
         display: none; 
     }

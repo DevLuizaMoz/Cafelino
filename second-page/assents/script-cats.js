@@ -59,50 +59,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     updateCounter();
   };
 
-
-const carousel = document.querySelector(".content-IDcard-cats-identity");
-let isDown = false;
-let startX;
-let scrollLeft;
-
-carousel.addEventListener("mousedown", (e) => {
-    isDown = true;
-    carousel.classList.add("active");
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
-});
-
-carousel.addEventListener("mouseleave", () => {
-    isDown = false;
-    carousel.classList.remove("active");
-});
-
-carousel.addEventListener("mouseup", () => {
-    isDown = false;
-    carousel.classList.remove("active");
-});
-
-carousel.addEventListener("mousemove", (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 2; // Velocidade do movimento
-    carousel.scrollLeft = scrollLeft - walk;
-});
-
 //duvidas frequentes
-const buttons = document.querySelectorAll('button');
+document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll('button');
 
-buttons.forEach( button =>{
-    button.addEventListener('click',()=>{
-        const faq = button.nextElementSibling;
-        const icon = button.children[1];
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const faq = button.nextElementSibling;
+            const icon = button.children[1];
 
-        faq.classList.toggle('show');
-        icon.classList.toggle('rotate');
-    })
-} )
-
+            faq.classList.toggle('show');
+            icon.classList.toggle('rotate');
+        });
+    });
+});
 
 function vermais(botao) {
     let comentario = botao.closest(".testimonials-item"); // Obtém o elemento pai correto

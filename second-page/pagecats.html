@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assents/style-cats.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="assents/img/favicon/cat.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    <script defer src="assents/script-cats.js"></script>
+    
     <title>Área do Gatil</title>
 </head>
 <body>
@@ -18,7 +19,6 @@
 
     arrumar a responsividade
 
-    adicionar um favicon nas duas paginas
     -->
     <section class="content-nav-sidebar">
         <header class="main-nav">
@@ -27,12 +27,13 @@
                     <div class="logo-main"></div>
                     <ul class="sidebar">
                         <li class="nav_closed-button-icon" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                        <li><a href="#about">O que é um gato café?</a></li>
-                        <li><a href="#environment">Nosso ambiente</a></li>
-                        <li><a href="#cards-menu">Nosso cardápio</a></li>
+                        <li><a href="#cattery">Nosso Gatil</a></li>
+                        <li><a href="#adoption">Por que adotar?</a></li>
+                        <li><a href="#words">Processo de adoção</a></li>
+                        <li><a href="#galery">Galeria</a></li>
+                        <li><a href="#chance">Dê uma chance</a></li>
                         <li><a href="#testimonials">O que nossos clientes acham?</a></li>
-                        <li><a href="#location">Localização</a></li>
-                        <div class="img-nav"></div>
+                        <li><a href="#FAQ-box">Dúvidas frequentes</a></li>
                     </ul>
                     <li class="nav_menu-button-icon"><a href="#" onclick="showSidebar(event)"><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>  
                 </div>
@@ -90,7 +91,7 @@
     <section class="content-text-about">
         <div class="text-about">
             <div class="text-cattery">
-                <div class="title-text-cattery">
+                <div class="title-text-cattery" id="cattery">
                     <h1><strong>Gatil do CAFÉLINO:</strong> Um Espaço de Amor e Acolhimento</h1>
                 </div>
                 <div class="content-cattery">
@@ -109,7 +110,7 @@
                 </div>
             </div>
             <div class="text-adoption">
-                <div class="title-text-adoption">
+                <div class="title-text-adoption" id="adoption">
                     <h1>Por que adotar?</h1>
                 </div>
                 <div class="content-adoption">
@@ -119,7 +120,7 @@
                 </div>
             </div>
             <div class="text-works">
-                <div class="title-text-works">
+                <div class="title-text-works" id="words">
                     <h1>Como o processo de adoção funciona?</h1>
                 </div>
                 <div class="content-works">
@@ -152,7 +153,7 @@
 
     <section class="galery-cats">
         <div class="content-galery">
-           <div class="title-galery-cats">
+           <div class="title-galery-cats" id="galery">
             <h1>Conheça alguns dos nossos gatos</h1>
         </div>
         <div class="content-photos-cats">
@@ -171,7 +172,7 @@
     
     <section class="content-text-chance">
         <div class="text-chance">
-                <div class="title-text-chance">
+                <div class="title-text-chance" id="chance">
                     <h1>Dê uma chance</h1>
                 </div>
                 <div class="content-chance">
@@ -182,9 +183,9 @@
             </div>
     </section>
 
-    <section class="container-testimonials" id="testimonials">
+    <section class="container-testimonials" >
             <div class="testimonials">
-                <div class="content-text-testimonials">
+                <div class="content-text-testimonials" id="testimonials">
                     <h1>O que nossos clientes dizem</h1>
                 </div>
                 <div class="testimonials-content">
@@ -369,10 +370,10 @@
                 </div>
             </div>
             <div class="programmer">
-                <h2>Projeto criado para fins de aprendizado. Feito por luhealmo.dev@gmail.com</h2>
+                <h2>Projeto criado para fins de aprendizado. <br>Feito por luhealmo.dev@gmail.com</h2>
             </div>
     </footer> 
-    
+    <script defer src="assents/script-cats.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.js-testimonials-slider', {
