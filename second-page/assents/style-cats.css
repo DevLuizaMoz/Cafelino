@@ -8,7 +8,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow-x: hidden;
     background-color: #D9C8BF;
@@ -129,7 +129,7 @@ nav li:first-child {
 }
 .banner{
     background-image: url(img/geral/banner/Todo\ animal\ merece\ amor\ e\ um\ lar.\ Adote\ e\ ganhe\ um\ amigo\ para\ sempre!.png);
-    width: 100vw;
+    width: 100%;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
