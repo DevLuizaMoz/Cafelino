@@ -623,26 +623,26 @@ nav li:first-child {
         font-size: 1rem;
     }
     .title-text-adoption{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .content-adoption{
         font-size: 1rem;
     }
     .title-text-works{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .content-works{
         font-size: 1rem;
     }
     .title-galery-cats{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .galery-photos {
         width: 130px;
         height: 130px;
     }
     .title-text-chance{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .content-chance{
         font-size: 1rem;
@@ -654,7 +654,7 @@ nav li:first-child {
         margin-top: 45px;
     }
     .content-text-testimonials{
-        font-size: 22px;
+        font-size: 18px;
     }
     .testimonials-item img{
         width: 60px;

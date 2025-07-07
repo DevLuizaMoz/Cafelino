@@ -748,6 +748,10 @@ nav li:first-child {
     .testimonials{
         width: 490px;
     }
+    .content-text-testimonials{
+        font-size: 18px;
+        margin: 10px 0;
+    }
     .testimonials .swiper-pagination{
         margin-top: 20px;
     }
